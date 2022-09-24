@@ -8,9 +8,9 @@ var botaoCopia = document.querySelector(".copy-button");
 var inputTexto = document.querySelector(".input-texto");
 var outputTexto = document.querySelector(".texto-resultado");
 
-function criptografar(){
+function criptografar() {
     var textoInput = inputTexto.value;
-    if(inputTexto.value != ""){
+    if (inputTexto.value != "") {
         copyid.style.display = "inline";
         textoInput = textoInput.replace(/e/g, "enter")
         textoInput = textoInput.replace(/i/g, "imes");
@@ -30,9 +30,9 @@ function criptografar(){
     }
 }
 
-function descriptografar(){
+function descriptografar() {
     var textoInput = inputTexto.value;
-    if(inputTexto.value != ""){
+    if (inputTexto.value != "") {
         copyid.style.display = "inline";
         textoInput = textoInput.replace(/enter/g, "e")
         textoInput = textoInput.replace(/imes/g, "i");
@@ -49,7 +49,7 @@ function descriptografar(){
     }
 }
 
-function copiar(){
+function copiar() {
     var text = document.querySelector(".input-texto");
     var textContent = document.querySelector(".texto-resultado").innerHTML;
 
@@ -62,7 +62,7 @@ function copiar(){
     }, 800);
 }
 
-function addFundoTexto(){
+function addFundoTexto() {
 
     if (window.innerWidth <= 1080) {
         document.querySelector(".right-container").style.background = "none";
@@ -70,21 +70,21 @@ function addFundoTexto(){
 
         document.querySelector(".texto-resultado").style.boxShadow = "none";
         document.querySelector(".texto-resultado").style.boxShadow = "0px 24px 32px -8px rgba(0, 0, 0, 0.08)";
-        
+
         document.querySelector(".texto-resultado").style.height = "6vh";
-        document.querySelector(".texto-resultado").style.height = (90+(document.querySelector(".texto-resultado")).scrollHeight)+"px";
-        document.querySelector(".copy-button").style.top = ((80+(document.querySelector(".texto-resultado")).scrollHeight) - 130)+"px";
+        document.querySelector(".texto-resultado").style.height = (90 + (document.querySelector(".texto-resultado")).scrollHeight) + "px";
+        document.querySelector(".copy-button").style.top = ((80 + (document.querySelector(".texto-resultado")).scrollHeight) - 130) + "px";
         document.querySelector(".texto-resultado").style.height = "6vh";
-        document.querySelector(".texto-resultado").style.height = (100+(document.querySelector(".texto-resultado")).scrollHeight)+"px";
-        document.querySelector(".copy-button").style.top = ((80+(document.querySelector(".texto-resultado")).scrollHeight) - 130)+"px";
+        document.querySelector(".texto-resultado").style.height = (100 + (document.querySelector(".texto-resultado")).scrollHeight) + "px";
+        document.querySelector(".copy-button").style.top = ((80 + (document.querySelector(".texto-resultado")).scrollHeight) - 130) + "px";
         document.querySelector(".copy-button").style.display = "inline";
     }
 
-    if (window.innerWidth > 1080){
-            document.querySelector(".texto-resultado").style.height = "72vh";
-            document.querySelector(".texto-resultado").style.height = (20+(document.querySelector(".texto-resultado")).scrollHeight)+"px";
-            document.querySelector(".texto-resultado").style.height = "72vh";
-            document.querySelector(".texto-resultado").style.height = (20+(document.querySelector(".texto-resultado")).scrollHeight)+"px";
+    if (window.innerWidth > 1080) {
+        document.querySelector(".texto-resultado").style.height = "72vh";
+        document.querySelector(".texto-resultado").style.height = (20 + (document.querySelector(".texto-resultado")).scrollHeight) + "px";
+        document.querySelector(".texto-resultado").style.height = "72vh";
+        document.querySelector(".texto-resultado").style.height = (20 + (document.querySelector(".texto-resultado")).scrollHeight) + "px";
     }
 }
 

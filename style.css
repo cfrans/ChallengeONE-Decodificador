@@ -1,26 +1,26 @@
-body{
+body {
     background-color: #F3F5FC;
     font-family: 'Inter', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     transition: 500ms;
 }
 
-a:hover{
+a:hover {
     font-weight: bold;
     color: #0A3871;
 }
 
-header{
+header {
     width: 70%;
     padding-top: 50px;
     padding-left: 150px;
     height: 10px;
 }
 
-.main-flex-container{
+.main-flex-container {
     margin-top: 0px;
     display: flex;
     height: 80vh;
@@ -29,9 +29,9 @@ header{
 .left-container {
     flex: 0.70;
     padding-left: 17%;
-    padding-top: 4%;;
+    padding-top: 4%;
     height: 75vh;
-}  
+}
 
 .right-container {
     flex: 0.30;
@@ -45,17 +45,17 @@ header{
     text-align: center;
     color: #343A40;
     position: relative;
-} 
+}
 
-.right-container p{
+.right-container p {
     text-align: center;
     font-size: 16px;
     margin: 2em 2em 2em;
     line-height: 20px;
-    display:block;
+    display: block;
 }
 
-.right-container h1{
+.right-container h1 {
     text-align: center;
     margin: 1em 3em 1em;
     font-size: 24px;
@@ -63,18 +63,19 @@ header{
 
 }
 
-.img-output{
+.img-output {
     width: 15vw;
 
     margin-top: 23vh;
 }
 
 
-::placeholder{
+::placeholder {
     color: #0A3871;
 }
 
-.left-container p, #icone-atencao{
+.left-container p,
+#icone-atencao {
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 1em;
@@ -83,11 +84,11 @@ header{
     color: #495057;
 }
 
-.titulo-resultado{
+.titulo-resultado {
     transition: 500ms;
 }
 
-.input-texto{
+.input-texto {
     background-color: #F3F5FC;
     height: 90%;
     width: 100%;
@@ -101,7 +102,8 @@ header{
     outline: none;
 }
 
-#criptografar, #descriptografar{
+#criptografar,
+#descriptografar {
     display: inline-block;
     flex-direction: row;
     align-items: flex-start;
@@ -122,24 +124,26 @@ header{
 }
 
 
-#descriptografar:hover, #criptografar:hover{
+#descriptografar:hover,
+#criptografar:hover {
     background: #F3F5FC;
     color: #0A3871;
     cursor: pointer;
 }
 
-#descriptografar:active, #criptografar:active{
+#descriptografar:active,
+#criptografar:active {
     transform: translateY(3px);
 }
 
-.copy-button{
+.copy-button {
 
     margin: 0 auto;
     background: white;
     color: #0A3871;
     width: 72%;
     height: 67px;
-    
+
     border-radius: 24px;
     border-color: #0A3871;
     border-style: solid;
@@ -150,23 +154,23 @@ header{
 }
 
 
-.copy-button:hover{
+.copy-button:hover {
     background: #0A3871;
     color: white;
     cursor: pointer;
 }
 
-.copy-button:active{
+.copy-button:active {
     transform: translateY(3px);
 }
 
-#resultado{
+#resultado {
     font-size: 24px;
     color: #495057;
     line-height: 1.2em;
 }
 
-.texto-resultado{
+.texto-resultado {
     font-size: 24px;
     margin-top: 30px;
     margin-left: 10%;
@@ -185,20 +189,20 @@ header{
     scrollbar-color: #0A3871;
 }
 
-::-webkit-scrollbar{
-  width: 10px;
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-::-webkit-scrollbar-track{
-  background: #f1f1f1;
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
 
-::-webkit-scrollbar-thumb{
-  background: #0A3871;
+::-webkit-scrollbar-thumb {
+    background: #0A3871;
 }
 
-::-webkit-scrollbar-thumb:hover{
-  background: #14509c;
+::-webkit-scrollbar-thumb:hover {
+    background: #14509c;
 }
 
 
@@ -206,17 +210,17 @@ header{
 
 
 @media screen and (max-width: 1080px) {
-    header{
+    header {
         margin-top: 20px;
         padding-left: 5%;
     }
 
-    .main-flex-container{
+    .main-flex-container {
         display: inline;
         height: auto;
     }
 
-    .left-container{
+    .left-container {
         float: none;
         width: 93%;
         padding-left: 5%;
@@ -225,12 +229,12 @@ header{
         margin-bottom: 20px;
     }
 
-    .buttons{
+    .buttons {
         width: 100%;
         float: left;
     }
 
-    .right-container{
+    .right-container {
         width: 90%;
         margin-top: 50px;
         margin-bottom: 30px;
@@ -243,32 +247,33 @@ header{
         position: relative;
     }
 
-    .img-output{
+    .img-output {
         display: none;
     }
 
-    #criptografar, #descriptografar{
+    #criptografar,
+    #descriptografar {
         width: 47%;
     }
 
-    .copy-button{
+    .copy-button {
         height: 60px;
         border-radius: 17px;
 
-        position:absolute;
+        position: absolute;
         left: 13.5%;
     }
 
-    .right-container p{
+    .right-container p {
         line-height: 15px;
         margin-top: 0px;
     }
-    
-    .right-container h1{
+
+    .right-container h1 {
         margin-top: 70px;
     }
 
-    .texto-resultado{
+    .texto-resultado {
         padding-left: 30px;
         padding-right: 30px;
         margin-bottom: 30px;
@@ -277,26 +282,27 @@ header{
         border-radius: 32px;
         max-height: none;
         padding-top: 32px;
-        
+
         display: block;
     }
 
-  }
+}
 
-@media screen and (max-width: 730px){
-    header{
+@media screen and (max-width: 730px) {
+    header {
         margin-top: 0px;
     }
 
-    .right-container{
+    .right-container {
         margin-top: 20px;
     }
 
-    .right-container h1{
+    .right-container h1 {
         margin-top: 40px;
     }
 
-    #criptografar, #descriptografar{
+    #criptografar,
+    #descriptografar {
         display: inline-block;
         flex-direction: row;
         align-items: flex-start;
@@ -306,18 +312,18 @@ header{
         height: 67px;
     }
 
-    .texto-resultado{
+    .texto-resultado {
         width: 82%;
     }
 
 }
 
-@media screen and (max-width: 1366px){
-    header{
+@media screen and (max-width: 1366px) {
+    header {
         padding-top: 35px;
     }
 
-    .input-texto{
+    .input-texto {
         background-color: #F3F5FC;
         height: 90%;
         width: 100%;
@@ -330,19 +336,19 @@ header{
         resize: none;
         outline: none;
     }
-    
-    #criptografar, #descriptografar{
+
+    #criptografar,
+    #descriptografar {
         height: 60px;
     }
 
-    .copy-button{
+    .copy-button {
         height: 60px;
     }
 
-    .img-output{
+    .img-output {
         width: 15vw;
-    
+
         margin-top: 18vh;
     }
 }
-
