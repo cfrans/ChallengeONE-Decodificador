@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Decodificador Alura</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="img/logo_header.svg" alt="Logotipo Alura">
+        </header>
+
+        <main>
+            <div class="main-flex-container">
+                <div class="left-container">
+                    <textarea cols="70" rows="10" id="mensagem" class="input-texto" spellcheck="false" placeholder="Digite seu texto" required></textarea>
+                    <img src="img/exclamation.svg" alt="Ícone de atenção" id="icone-atencao">
+                    <p>Apenas letras minúsculas e sem acento. Desenvolvido por <a href="https://github.com/cfrans" target="_blank">Caio Franson</a>.</p>
+                    <div class="buttons">
+                        <input type="submit" value="Criptografar" id="criptografar">
+                        <input type="submit" value="Descriptografar" id="descriptografar">
+                    </div>
+                </div>
+                <div class="right-container">
+                    <img src="img/no-message-found.png" alt="Pessoa olhando um objeto com uma lupa." class="img-output">
+                    <h1 class="titulo-resultado">Nenhuma mensagem encontrada</h1>
+                    <p class="paragrafo-resultado">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <form>
+                        <textarea class="texto-resultado" spellcheck="false" readonly="true">
+                        </textarea>
+                    </form>
+                    <div id="resultado">
+                        <button class="copy-button" id="copyid">Copiar</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
